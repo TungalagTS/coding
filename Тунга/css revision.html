@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plus_CSS_Revision</title>
+    <style>
+      h1 {
+        text-align: left;
+        text-decoration: underline;
+        font-size: 18px;
+        font-weight: normal;
+        color: blueviolet;
+        background color: rgba(135, 93, 241, 0.5);
+        line-height: 28px;
+      }
+
+      p {
+        font-weight: 700;
+      }
+
+      a {
+        font-weight: 100;
+      }
+      p {
+        color: #00ff00;
+      }
+      .header {
+        background: green;
+      }
+
+      /* without transparency */
+      p {
+        color: rgb(135, 93, 241);
+      }
+
+      /* with transparency */
+
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      /* Margin around the element */
+      .box-1 {
+        margin: 10px;
+      }
+
+      /* Margin left only */
+      .box-2 {
+        margin-left: 10px;
+      }
+
+      /* 10px margin on top and bottom, 5px on the sides */
+      .box-3 {
+        margin: 10px 5px;
+      }
+
+      /* 20px margin top, 15px margin right, 10px margin bottom and 5px margin left */
+      .box-4 {
+        margin: 20px 15px 10px 5px;
+      }
+
+      /* padding around the element */
+      .box-1 {
+        padding: 10px;
+      }
+
+      /* padding left only */
+      .box-2 {
+        padding-left: 10px;
+      }
+
+      /* 10px padding on top and bottom, 5px on the sides */
+      .box-3 {
+        padding: 10px 5px;
+      }
+
+      /* 20px padding top, 15px padding right, 10px padding bottom and 5px padding left */
+      .box-4 {
+        padding: 20px 15px 10px 5px;
+      }
+
+      .header {
+        border: 1px solid #885df1;
+      }
+
+      /* Light rounded corner all around the element */
+      .box-1 {
+        border-radius: 20px;
+        border-radius: 50% 50% 0 0;
+      }
+
+      /* Rounded corder top left and right only */
+      .box-2 {
+        border-radius: 50% 50% 0 0;
+      }
+
+      .box {
+        box-shadow: 10px 5px 5px red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text align</h1>
+    h1 { text-align: center; } <br />
+    text-align: left | right | center | justify | initial | inherit;
+
+    <h1>Text decoration</h1>
+    h1 { text-decoration: underline; }
+    <br />
+    none: no line is drawn, and any existing decoration is removed. <br />
+    underline: draws a 1px line across the text at its baseline. <br />
+    line-through: draws a 1px line across the text at its “middle” point.
+    <br />overline: draws a 1px line across the text, directly above its “top”
+    point. <br />inherit: inherits the decoration of the parent.
+
+    <h1>Font Size</h1>
+    body { font-size: 18px; }
+
+    <h1>Font weight</h1>
+    h1 { font-weight: normal; }
+    <br />p { font-weight: 700; } <br />a { font-weight: 100; } <br />Note:
+    font-weight: normal | bold | bolder | lighter | number | initial |
+    inherit;<br />
+    It can also be a value between 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800
+    | 900 <br />where 100 is thin and 900 is extra bold
+
+    <h1>Color Property</h1>
+    p { color: #00ff00; }
+
+    <h1>Background</h1>
+    .header { background: green; } <br />You can also use an image as a
+    background.
+
+    <h1>Native Colors</h1>
+    h1 { color: blueviolet; }<br />
+    Note: We generally only use black or white. Other colors such as red, blue,
+    green are only good for testing purposes. You should use Hexadecimal values
+    instead.
+
+    <h1>Hexadecimal colors</h1>
+    h1 { color: #885df1; } <br />Use a color picker to find the color you
+    need.<br />
+    Note: #000000 is black, #ffffff is white. #ffffff is the same as #fff,
+    #FFFFFF or #fff or white.
+
+    <h1>RGB colors</h1>
+    /* without transparency */ <br />p { color: rgb(135, 93, 241); }<br />
+    /* with transparency */ <br />h1 { color: rgba(135, 93, 241, 0.5); }
+    <br />The RGB color model defines a given color according to its red, green,
+    and blue components. An optional alpha component represents the color's
+    transparency. The first 3 values should be between 0 and 255 and the fourth
+    between 0 and 1. 0 being completely transparent.
+
+    <h1>Line height</h1>
+    h1 { line-height: 28px; } <br />p { font-size: 14px; line-height: 1.5; }
+    <br />Note: We generally use a multiplier such as 1.5 which making the line
+    height 1.5 times higher than the font size
+
+    <h1>Margin</h1>
+    /* Margin around the element */<br />
+    .box-1 { margin: 10px; } <br />/* Margin left only */ <br />.box-2 {
+    margin-left: 10px; } <br />/* 10px margin on top and bottom, 5px on the
+    sides */<br />
+    .box-3 { margin: 10px 5px; }<br />
+    /* 20px margin top, 15px margin right, 10px margin bottom and 5px margin
+    left */<br />
+    .box-4 { margin: 20px 15px 10px 5px; } <br />Space outside an element.
+
+    <h1>Padding</h1>
+    /* padding around the element */<br />
+    .box-1 { padding: 10px; } <br />/* padding left only */<br />
+    .box-2 { padding-left: 10px; }<br />
+    /* 10px padding on top and bottom, 5px on the sides */ <br />.box-3 {
+    padding: 10px 5px; }<br />
+    /* 20px padding top, 15px padding right, 10px padding bottom and 5px padding
+    left */<br />
+    .box-4 { padding: 20px 15px 10px 5px; }<br />
+    Space inside an element.
+
+    <h1>Border</h1>
+    .header { border: 1px solid #885df1; }<br />
+    First value is the thickness, second one the style (none | hidden | dotted |
+    dashed | solid | double | groove | ridge | inset | outset), and third one is
+    the color.
+
+    <h1>Radius</h1>
+    /* Light rounded corner all around the element */<br />
+    .box-1 { border-radius: 20px; border-radius: 50% 50% 0 0; }<br />
+    /* Rounded corder top left and right only */ <br />.box-2 { border-radius:
+    50% 50% 0 0; } <br />The border-radius CSS property rounds the corners of an
+    element's outer border edge.
+
+    <h1>Box Shadow</h1>
+    .box { box-shadow: 10px 5px 5px red; }<br />
+    the third value is the blur radius and the last value is the shadow color.
+  </body>
+</html>
